@@ -1,3 +1,5 @@
+//1. Second Largest element of a given array.
+
 let arr = [11, 2, 35, 55, 88, 31, 889]
 
 function getSecondLargest(arr) {
