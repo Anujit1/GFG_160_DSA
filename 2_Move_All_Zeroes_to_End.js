@@ -1,7 +1,6 @@
 //2. Move All Zeroes of an array to the End
 
 
-
 // brute force
 
 /* function moveZero(arr){
