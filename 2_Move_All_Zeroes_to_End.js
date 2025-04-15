@@ -36,23 +36,24 @@ function swap(position){
 // optimized
 
 function moveZero(arr) {
-    let count = 0;
+    let count = 0, temp;
     
     for(let i = 0; i < arr.length; i++){
-        if(arr[i] !== 0){
-            arr[count++] = arr[i];
+        if(arr[i] != 0){
+            temp = arr[i];
+            arr[i] = arr[count];
+            arr[count] = temp;
+            count++;
         }
     }
-    
-    while(count < arr.length){
-        arr[count++] = 0
-    }
+
+
     
 }
 
 
 
-let arr = [1, 2, 5, 0, 4, 0, 8, 7, 0, 0, 58, 9, 0 ,45, 0,0,0,0,0,77,0,0,0,0,1];
+let arr = [1, 2, 0, 5, 0, 4, 0, 8, 7, 0, 0, 58];
 moveZero(arr);
 
 console.log(arr);
